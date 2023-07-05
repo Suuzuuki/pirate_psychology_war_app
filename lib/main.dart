@@ -23,10 +23,9 @@ class MainApp extends StatelessWidget {
     _initSharedPreferences();
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: theme.data,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
